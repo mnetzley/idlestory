@@ -1,0 +1,17 @@
+.section {
+    width: 120px;
+    height: 400px;
+    background-color: rgb(235, 235, 235);
+    display: inline-block;
+}
+
+.sectiontitle {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.story {
+    width: 992px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
