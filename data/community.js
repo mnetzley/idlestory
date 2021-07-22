@@ -11,5 +11,14 @@ class community {
         this.berries = 0;
         this.grapes = 0;
         this.apples = 0;
+        this.herbs = 0;
+        this.tabacco = 0;
+        this.flowers = 0;
+        this.compost = 0;
+        this.shovel = 0;
+        this.lightPlow = 0;
+        this.hoe = 0;
+        this.heavyPlow = 0;
+        this.rake = 0;
     }
 }

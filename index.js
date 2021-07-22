@@ -71,7 +71,41 @@ const berries = new Item ("berries", 1, 2, 0, "food", [], ["Farmer"]);
 const grapes = new Item ("grapes", 1, 2, 0, "food", [], ["Farmer"]);
 const apples = new Item ("apples", 1, 2, 0, "food", [], ["Farmer"]);
 
-const items = [];
+
+const items = [
+    ["wheat", 1, 2, 0, "food", [], ["Farmer"]],
+    ["rice", 1, 2, 0, "food", [], ["Farmer"]],
+    ["barley", 1, 2, 0, "food", [], ["Farmer"]],
+    ["corn", 1, 2, 0, "food", [], ["Farmer"]],
+    ["soy beans", 1, 2, 0, "food", [], ["Farmer"]],
+    ["potatoes", 1, 2, 0, "food", [], ["Farmer"]],
+    ["pumpkins", 1, 2, 0, "food", [], ["Farmer"]],
+    ["eggplant", 1, 2, 0, "food", [], ["Farmer"]],
+    ["berries", 1, 2, 0, "food", [], ["Farmer"]],
+    ["grapes", 1, 2, 0, "food", [], ["Farmer"]],
+    ["apples", 1, 2, 0, "food", [], ["Farmer"]],
+    ["herbs", 1, 2, 0, "material", [], ["Farmer"]],
+    ["tabacco", 1, 2, 0, "material", [], ["Farmer"]],
+    ["flowers", 1, 2, 0, "material", [], ["Farmer"]],
+    ["compost", 1, 2, 0, "material", [], ["Farmer"]],
+    ["shovel", 1, 2, 0, "tool", [], ["Farmer"]],
+    ["lightPlow", 1, 2, 0, "tool", [], ["Farmer"]],
+    ["hoe", 1, 2, 0, "tool", [], ["Farmer"]],
+    ["heavyPlow", 1, 2, 0, "tool", [], ["Farmer"]],
+    ["rake", 1, 2, 0, "tool", [], ["Farmer"]],
+];
+
+
+class community {
+    constructor () {
+    }
+}
+
+const createitemObject = (items) => {
+    const allCommunity
+}
+
+
 items.push(wheat);
 items.push(rice);
 console.log(wheat);
@@ -95,33 +129,3 @@ const addItemsToCharacter = (character, items) => {
 
 
 addItemsToCharacter(matthew, items);
-
-// rice.count = 5000;
-console.log(matthew)
-// console.log(matthew.rice)
-// console.log(items)
-// console.log(rice)
-// console.log(matthew.rice.count)
-
-// const materials = {
-//     farm: {
-//         herbs: 0,
-//         tobacco: 0,
-//         flowers: 0,
-//         compost: 0,
-//     }
-// }
-
-// const tools = {
-//     shovel: 0,
-//     lightPlow: 0,
-//     hoe: 0,
-//     heavyPlow: 0,
-//     pitchfork: 0,
-//     rake: 0,
-// }
-
-// const buildings = {
-//     shed: 0,
-//     silo: 0,
-// }
