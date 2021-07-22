@@ -1,0 +1,29 @@
+name,cost,aP,count,type,inputs,users,communityValue
+wheat,1,2,0,food,,farmer,1000
+rice,1,2,0,food,,farmer,1000
+barley,1,2,0,food,,farmer,1000
+corn,1,2,0,food,,farmer,1000
+soy beans,1,2,0,food,,farmer,1000
+potatoes,1,2,0,food,,farmer,1000
+pumpkins,1,2,0,food,,farmer,1000
+eggplant,1,2,0,food,,farmer,1000
+berries,1,2,0,food,,farmer,1000
+grapes,1,2,0,food,,farmer,1000
+apples,1,2,0,food,,farmer,1000
+herbs,1,2,0,material,,farmer,1000
+tabacco,1,2,0,material,,farmer,1000
+flowers,1,2,0,material,,farmer,1000
+compost,1,2,0,material,,farmer,1000
+straw,1,2,0,material,,farmer,1000
+wooden shovel,1,2,0,tool,wood,farmer,1000
+metal shovel,1,2,0,tool,"iron, wood",farmer,1000
+lightplow,1,2,0,tool,wood,farmer,1000
+wooden hoe,1,2,0,tool,wood,farmer,1000
+metal shovel,1,2,0,tool,"iron, wood",farmer,1000
+heavyPlow,1,2,0,tool,"iron, wood",farmer,1000
+wooden rake,1,2,0,tool,wood,farmer,1000
+metal rake,1,2,0,tool,"iron, wood",farmer,1000
+pitchfork,1,2,0,tool,wood,farmer,1000
+handcart,1,2,0,tool,wood,farmer,1000
+trailer,1,2,0,tool,"iron, wood",farmer,1000
+scarecrow,1,2,0,tool,"clothes, straw",farmer,1000

@@ -1,63 +1,6 @@
-class Player {
-    constructor (){
-        this.pA = 1;
-        this.pD = 1;
-        this.mA = 1;
-        this.mD = 1;
-        this.fate = 0;
-        this.gold = 0;
-        this.aP = 3;
-        this.aPMax = 3;
-        this.skill = 0;
-        this.practice = 1;
-        this.food = 5
-        this.actions = []
-    }
-
-    addAction = (func) => {
-        if (this.aP > 0) {
-            this.actions.push(func);
-            this.aP--
-        }
-    }
-
-    deleteAction = (func) => {
-        if (this.aP < this.aPMax) {
-            let index = this.actions.indexOf(func);
-            this.actions.splice(index, 1);
-            this.aP++
-        }
-    }
-
-    completeDay (community) {
-        this.actions.forEach(el, () => {
-            el(community)
-        })
-    }
-}
-
-class Farmer extends Player{
-    constructor (pA, pD, mA, mD, fate, gold, aP, aPMax, skill, practice, food, actions, items) {
-        super(pA, pD, mA, mD, fate, gold, aP, aPMax, skill, practice, food, actions);
-        this.items = {};
-    }
 
 
-}
 
-const matthew = new Farmer
-
-class Item {
-    constructor (name, cost, aP, count, type, inputs, users) {
-        this.name = name
-        this.cost = cost;
-        this.aP = aP;
-        this.count = count;
-        this.type = type;
-        this.inputs = inputs;
-        this.users = users;
-    }
-}
 
 const wheat = new Item ("wheat", 1, 2, 0, "food", [], ["Farmer"]);
 const rice = new Item ("rice", 1, 2, 0, "food", [], ["Farmer"]);
@@ -72,27 +15,27 @@ const grapes = new Item ("grapes", 1, 2, 0, "food", [], ["Farmer"]);
 const apples = new Item ("apples", 1, 2, 0, "food", [], ["Farmer"]);
 
 
-const items = [
-    ["wheat", 1, 2, 0, "food", [], ["Farmer"]],
-    ["rice", 1, 2, 0, "food", [], ["Farmer"]],
-    ["barley", 1, 2, 0, "food", [], ["Farmer"]],
-    ["corn", 1, 2, 0, "food", [], ["Farmer"]],
-    ["soy beans", 1, 2, 0, "food", [], ["Farmer"]],
-    ["potatoes", 1, 2, 0, "food", [], ["Farmer"]],
-    ["pumpkins", 1, 2, 0, "food", [], ["Farmer"]],
-    ["eggplant", 1, 2, 0, "food", [], ["Farmer"]],
-    ["berries", 1, 2, 0, "food", [], ["Farmer"]],
-    ["grapes", 1, 2, 0, "food", [], ["Farmer"]],
-    ["apples", 1, 2, 0, "food", [], ["Farmer"]],
-    ["herbs", 1, 2, 0, "material", [], ["Farmer"]],
-    ["tabacco", 1, 2, 0, "material", [], ["Farmer"]],
-    ["flowers", 1, 2, 0, "material", [], ["Farmer"]],
-    ["compost", 1, 2, 0, "material", [], ["Farmer"]],
-    ["shovel", 1, 2, 0, "tool", [], ["Farmer"]],
-    ["lightPlow", 1, 2, 0, "tool", [], ["Farmer"]],
-    ["hoe", 1, 2, 0, "tool", [], ["Farmer"]],
-    ["heavyPlow", 1, 2, 0, "tool", [], ["Farmer"]],
-    ["rake", 1, 2, 0, "tool", [], ["Farmer"]],
+const itemsArr = [
+    ["wheat", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["rice", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["barley", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["corn", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["soy beans", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["potatoes", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["pumpkins", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["eggplant", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["berries", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["grapes", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["apples", 1, 2, 0, "food", [], ["Farmer"], 1000],
+    ["herbs", 1, 2, 0, "material", [], ["Farmer"], 1000],
+    ["tabacco", 1, 2, 0, "material", [], ["Farmer"], 1000],
+    ["flowers", 1, 2, 0, "material", [], ["Farmer"], 1000],
+    ["compost", 1, 2, 0, "material", [], ["Farmer"], 1000],
+    ["shovel", 1, 2, 0, "tool", [], ["Farmer"], 1000],
+    ["lightPlow", 1, 2, 0, "tool", [], ["Farmer"], 1000],
+    ["hoe", 1, 2, 0, "tool", [], ["Farmer"], 1000],
+    ["heavyPlow", 1, 2, 0, "tool", [], ["Farmer"], 1000],
+    ["rake", 1, 2, 0, "tool", [], ["Farmer"], 1000],
 ];
 
 
@@ -101,9 +44,9 @@ class community {
     }
 }
 
-const createitemObject = (items) => {
-    const allCommunity
-}
+// const createitemObject = (items) => {
+//     const allCommunity
+// }
 
 
 items.push(wheat);
